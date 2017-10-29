@@ -1,0 +1,25 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+h1 test
+p hello slim
+
+fieldset
+  button#btn
+    p alert
+
+fieldset
+  button#btn2
+    p post
+
+/部分テンプレートの呼び出し
+== slim :_bubun
+
+coffee:
+  alert "CoffeeScriptのアラート"
+
+  $('#btn').click ->
+    alert "CoffeeScriptのアラート2"
+  
+  $('#btn2').click ->
+    $.post "post_slim", ->
+      alert "postok"
