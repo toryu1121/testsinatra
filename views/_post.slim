@@ -1,0 +1,8 @@
+fieldset
+  h2 _post.slim
+  button#btn2 post
+
+coffee:
+  $('#btn2').click ->
+    $.post "post_slim", ->
+      alert "postok"

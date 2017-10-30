@@ -3,7 +3,7 @@ require 'sinatra/reloader'
 
 # http://localhost:4567
 get '/' do
-  slim :test_slim
+  slim :index
 end
 
 post '/post_slim' do
